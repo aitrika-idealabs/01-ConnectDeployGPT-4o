@@ -4,7 +4,7 @@ import requests
 # import os
 
 # Load environment variables
-load_dotenv()
+# load_dotenv()
 
 API_KEY = st.secrets["API_KEY"]  
 AZURE_ENDPOINT = st.secrets["AZURE_ENDPOINT"]  
