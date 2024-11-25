@@ -6,14 +6,14 @@ import os
 # Load environment variables
 load_dotenv()
 
-API_KEY = os.getenv("API_KEY")  
-AZURE_ENDPOINT = os.getenv("AZURE_ENDPOINT")  
+API_KEY = st.secrets("API_KEY")  
+AZURE_ENDPOINT = st.secrets("AZURE_ENDPOINT")  
 
-WHISPER_API = os.getenv("WHISPER_API")  
-WHISPER_ENDPOINT = os.getenv("WHISPER_ENDPOINT")  
+WHISPER_API = st.secrets("WHISPER_API")  
+WHISPER_ENDPOINT = st.secrets("WHISPER_ENDPOINT")  
 
-EMBED_API = os.getenv("EMBED_API")  
-EMBED_ENDPOINT = os.getenv("EMBED_ENDPOINT")  
+EMBED_API = st.secrets("EMBED_API")  
+EMBED_ENDPOINT = st.secrets("EMBED_ENDPOINT")  
 
 # Azure OpenAI Chat Completion
 def query_chat_completion(prompt):
